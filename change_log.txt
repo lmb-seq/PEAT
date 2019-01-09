@@ -1,0 +1,186 @@
+
+#Changes & Bug fixes from version vb1.0 to version vb1.03
+#Changes
+Added button to show/hide select columns checkboxes
+Added mouseover text to explain functions of UI 
+Check when adding annotation column names that none are from existing column names
+Further merged/'functionalised' the functions for generating output
+Option to specify FC must be in other direction in 'Other comparisons'
+Added version tag at bottom of UI
+
+#Bug fixes
+Fixed bug where annotation removal buttons would not appear till changed to new tab
+
+
+#Changes & Bug fixes from version vb1.03 to version vb1.06
+#Changes
+Added option to select species and for this to change functions
+Added options for 'Built-in' annotations downloaded from Web
+Gene name/symbol lookup now done directly from Web, falls back to downloaded data if fails to get response - this takes 2-3x as long but is better
+Added Per gene tab, with information about a given gene
+
+#Bug fixes
+
+
+#Changes & Bug fixes from version vb1.06 to version vb1.065
+#Changes
+Per gene tab gene description now from WormBase not WormMine
+Per gene "Choose gene" now takes SecondaryIdentifer / sequence name as well
+Per gene tab lists possible gene names
+
+#Bug fixes
+
+
+#Changes & Bug fixes from version vb1.065 to version vb1.13
+#Changes
+Gene name variants now displayed as table
+Tabset UI now variable
+ - Unused filter file genes tabs now only appears when filterfile loaded
+Mouseover text added to Per Gene tab
+FPKM number in Per Gene tab graph rounded to 2 decimal places
+Added option to remove tallest bar on Per gene plot graph
+Simplified intermine code
+Changed all code to use column names not numbers
+Merged columns 3 and 4
+Dynamically add built-in annotations, can vary by species
+Added 'Other' species, which doesn't attempt to get online data, falls back to this when cannot interpret gene ids
+Now can take either 'primary' or 'secondary' InterMine IDs as the original 'gene_id' column
+In per gene plot the 'pair' of the condition that is compared to is coloured white, conditions not compared are coloured grey
+Changed in other comparison selectors so now gives you options rather then having to type them
+Uses local backup of 'translation table' to fall back when offline
+Intermine website changed
+
+#Bug fixes
+Position of FPKM number in Per Gene tab graph fixed for genes with big FPKM differences
+On Per Gene plot names of bars rotated 45 degrees to ensure that all are shown on low resolution screens
+Fixed bug where multiple annotation sets not displayed at same time
+Handles failure to download data from InterMine properly
+
+
+#Changes & Bug fixes from version vb1.13 to version vb1.20
+#Changes
+annotateBuiltIn() falls back to InterMine if species-specific datasource offline
+Rationalised annotation merging so it no longer uses 'test_id' column
+Changed UI to Dashboard (post vb1.15)
+Filter file genes tab now shows details for all genes in list
+Can now click on a gene in Table tab or Filter file genes tab and goes to Per Gene tab and selects that gene
+Per gene tab gene entry box now has autocomplete
+Per gene tab gene_names_table now only shows third row if has data for it
+Human added as option - uses offline translation as Humanmine is not remotely complete for Ensembl gene lookups
+Added ability to choose + define data format
+Added a popup to say that you can only have removal buttons for n annotations (currently 10)
+
+#Bug fixes
+Fixed bug where filtering out all genes gave error
+Changed numeric table columns so it knows they are numbers and does numeric sort
+Fixed problem with removing multiple options from select other comparisons
+Bug in options for table2 fixed
+Fixed problem with duplicated rows when adding annotation
+Fixed n genes incorrectly reported on Summary when genes lack a gene_id
+
+
+#Changes & Bug fixes from version vb1.20 to version vb1.21
+#Changes
+Added isoform mode
+
+#Bug fixes
+
+
+#Changes & Bug fixes from version vb1.21 to version vb1.21.1
+#Changes
+
+#Bug fixes
+Allow more colours in per gene isoform plot
+
+
+#Changes & Bug fixes from version vb1.21.1 to version vb2.00
+#Changes
+Major rewrite of code to use shinydashboard and make more modular
+
+#Bug fixes
+
+
+#Changes & Bug fixes from version vb2.00 to version vb2.01
+#Changes
+Added gProfile
+
+#Bug fixes
+Fixed gene list loading for enrichment
+
+
+#Changes & Bug fixes from version vb2.01 to version vb2.1
+#Changes
+log2FC input is abs()
+Added species - Fly,Mouse
+Added option for changing x-axis text size on per gene tab
+Added PRAGUI DEseq format
+Added gene lists
+Added enrichment text
+Added volcano plot options
+Added scatter plot of expression in current comparison
+
+#Bug fixes
+Fixed issue where the Per gene tab would save brief_description for a single gene, preventing the general brief_description being saved
+
+
+#Changes & Bug fixes from version vb2.1 to version vb2.11
+#Changes
+Added options to make gene lists from enrichment data
+Increased max file size
+
+#Bug fixes
+Fixed issue where Volcano+Scatter plots would not show all data as background when using (Not) In other comparisons 
+Partially fixed issue where Heatmap assumed all vs all comparisons would exist
+Fixed bug where enrichment was not calculated when built-in annotations selected
+
+
+#Changes & Bug fixes from version vb2.11 to version vb2.12
+#Changes
+Added options to make gene lists from orthologs
+Added option to set the samples/sample order shown on per gene tab
+
+#Bug fixes
+Fixed issue where when In Other Comparisons is in multiples then they are shown as different columns in gene list metadata
+
+
+#Changes & Bug fixes from version vb2.12 to version vb2.13
+#Changes
+Changed Per gene tab to show text to choose a sample when no samples selected
+Added option to rotate sample names in per gene plot and set default to FALSE - set to TRUE automatically when the longest sample name length > 8
+Added Description to gene list metadata
+Reordered code
+
+#Bug fixes
+
+
+#Changes & Bug fixes from version vb2.13 to version vb2.2
+#Changes
+Deleted most commented out code
+Added option for heatmap to plot all genes, not just top 50
+Forces gene list names to be unique
+Threshold for checking to see if right species lowered to 75%
+Added option to modify gene lists metadata on gene list tab and moved buttons here from gene lists menu
+Added hypergeometric test to on gene list tab
+On gene list genes tab Other gene ID column has NA's removed
+On enrichment tab changed p-value column to adjusted p-value
+Disabled the Human only options for gProfile enrichment when not in Human
+Download buttons only appear for data that has been or is in the process of being generated
+Added download links for figures as SVG 
+Default gene list name is not currently used by a gene list
+
+#Bug fixes
+Fixed bug where choosing log scale on per gene tab when exppression = 0 caused error
+
+
+#Changes & Bug fixes from version vb2.2 to version vb2.21
+#Changes
+Added horizontal scroll bars to most tables
+Can now hide columns on Gene lists table
+Added option to scatter plot for dashed x=y line
+Added collapsible sidebar
+Added pragui_transcript
+
+#Bug fixes
+
+
+
