@@ -12,11 +12,17 @@ MANUAL
 TERMINOLOGY
 
 Samples - the different samples that were sequenced.
+
 Comparisons - any pairwise comparison of two samples, where sample 1 refers to the first sample in the comparison and sample 2 to the second, e.g. WT vs KO - WT is sample 1 and KO is sample 2.
+
 Sidebar - the options down the left hand side.
+
 Tabs - the options aling the top.
+
 DE - differentially expressed.
+
 KO - Knockout.
+
 OE - Overexpression.
 
 Details of what most options do can be found in the tooltips shown when the mouse is left over them for a short while.
