@@ -2,12 +2,36 @@
 
 <H3>INSTALLATION</H3>
 
+REQUIREMENTS:<br><br>
+R (https://www.r-project.org/)<br><br>
+R libraries:<br>
+shiny<br>
+shinyjs <br>
+shinydashboard<br>
+DT<br>
+data.table <br>
+plotly<br>
+gplots <br>
+svglite <br>
+ComplexHeatmap <br>
+httr<br>
+jsonlite<br>
+RCurl<br>
+InterMineR <br>
+gProfileR <br>
+eulerr<br><br>
+
+MAC only (pre-installed on OS X 10-5 to 10.7):<br>
+X11 libraries (https://www.xquartz.org/)<br><br>
+
 
 <H3>RUNNING</H3>
 
+In R:<br>
+shiny::runApp('folder_name')<br><br>
+
 
 <H3>MANUAL</H3>
-
 
 TERMINOLOGY
 
