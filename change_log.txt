@@ -183,4 +183,17 @@ Added pragui_transcript
 #Bug fixes
 
 
+#Changes & Bug fixes from version vb2.21 to version vb2.25
+#Changes
+Added space after comma to merged metadata in gene list set operations
+Added plot to show distribution of annotations across genes 
+Changed species names options to load from speciesNames() function
+Moved gene lists and enrichment to separate code files
+Added pairwise correlation plot for different comparisons
+Added Venn diagrams to gene list code in gene_lists_UI+functions.R
+
+#Bug fixes
+Corrected pragui_transcript exp unit name to norm read count
+Fixed bug where NAs in log2.fold_change prevent Volcano plot and Hierarchichal clustering from working properly
+
 
