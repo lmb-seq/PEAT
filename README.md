@@ -25,7 +25,7 @@ These can be installed by running the R script PEAT_required_installation.R <br>
 If at any point the script asks "Update all/some/none? [a/s/n]:" enter a. <br>
 If you are asked to make a local library choose yes and accept the default location.<br><br>
 
-MAC only (pre-installed on OS X 10-5 to 10.7):<br>
+MAC only (pre-installed on OS X 10.5 to 10.7):<br>
 X11 libraries (follow instructions at https://www.xquartz.org/)<br><br>
 
 Any modern web browser.<br>
