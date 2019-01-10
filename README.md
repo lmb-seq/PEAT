@@ -27,8 +27,10 @@ If at any point the script asks "Update all/some/none? [a/s/n]:" enter a. <br><b
 MAC only (pre-installed on OS X 10-5 to 10.7):<br>
 X11 libraries (follow instructions at https://www.xquartz.org/)<br><br>
 
-Unpack the compressed data to a folder.<br><br>
 
+INSTALL<br><br>
+Unpack the compressed data to a folder.<br>
+Install the above required software.<br><br>
 
 <H3>RUNNING</H3>
 
