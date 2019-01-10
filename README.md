@@ -3,7 +3,7 @@
 <H3>INSTALLATION</H3>
 
 REQUIREMENTS:<br><br>
-R (follow instructions at https://www.r-project.org/)<br><br>
+R v3.4 or greater (follow instructions at https://www.r-project.org/)<br><br>
 R libraries:<br>
 shiny<br>
 shinyjs <br>
@@ -27,6 +27,9 @@ If at any point the script asks "Update all/some/none? [a/s/n]:" enter a. <br><b
 MAC only (pre-installed on OS X 10-5 to 10.7):<br>
 X11 libraries (follow instructions at https://www.xquartz.org/)<br><br>
 
+Any modern web browser.<br>
+N.B. Safari has problems downloading files in PEAT, Firefox and Chrome are not known to have any problems.<br><br>
+
 
 INSTALL<br><br>
 Unpack the compressed data to a folder.<br>
@@ -36,6 +39,7 @@ Install the above required software.<br><br>
 
 In R type:<br>
 shiny::runApp('folder_name')<br>
+and press enter. PEAT will launch in your web browser.<br>
 e.g. shiny::runApp('diffexp_app_v2.25') <br><br>
 
 
