@@ -3,7 +3,7 @@
 <H3>INSTALLATION</H3>
 
 REQUIREMENTS:<br><br>
-R (https://www.r-project.org/)<br><br>
+R (follow instructions at https://www.r-project.org/)<br><br>
 R libraries:<br>
 shiny<br>
 shinyjs <br>
@@ -19,10 +19,13 @@ jsonlite<br>
 RCurl<br>
 InterMineR <br>
 gProfileR <br>
-eulerr<br><br>
+eulerr
+
+These can be installed by running the R script PEAT_required_installation.R <br>
+If at any point the script asks "Update all/some/none? [a/s/n]:" enter a. <br><br>
 
 MAC only (pre-installed on OS X 10-5 to 10.7):<br>
-X11 libraries (https://www.xquartz.org/)<br><br>
+X11 libraries (follow instructions at https://www.xquartz.org/)<br><br>
 
 Unpack the compressed data to a folder.<br><br>
 
