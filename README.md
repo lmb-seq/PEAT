@@ -3,7 +3,7 @@
 <H3>INSTALLATION</H3>
 
 REQUIREMENTS:<br><br>
-R v3.4 or greater (follow instructions at https://www.r-project.org/)<br><br>
+R v3.5 or greater (follow instructions at https://www.r-project.org/)<br><br>
 R libraries:<br>
 shiny<br>
 shinyjs <br>
