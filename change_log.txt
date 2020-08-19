@@ -197,3 +197,12 @@ Corrected pragui_transcript exp unit name to norm read count
 Fixed bug where NAs in log2.fold_change prevent Volcano plot and Hierarchichal clustering from working properly
 
 
+#Changes & Bug fixes from version vb2.25 to version vb2.26
+#Changes
+Disabled getAnnot so will not look online - should be rewritten properly - in crispAnnotationCollection.R
+Disabled showing Venn Diagram option in gene_list_table_ui - in gene_lists_UI+functions.R
+
+#Bug fixes
+Fixed gene list backwards compatibility issue in gene_lists_UI+functions.R
+Fixed issue in sampleNames() where nonfactorised Sample Names caused inability to get Sample Names
+
