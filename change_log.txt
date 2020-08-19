@@ -201,6 +201,8 @@ Fixed bug where NAs in log2.fold_change prevent Volcano plot and Hierarchichal c
 #Changes
 Disabled getAnnot so will not look online - should be rewritten properly - in crispAnnotationCollection.R
 Disabled showing Venn Diagram option in gene_list_table_ui - in gene_lists_UI+functions.R
+Updated PEAT_required_installation.R to the newer version of Bioconductor
+Included new scripts for generating the annotation files while getAnnot is disabled.
 
 #Bug fixes
 Fixed gene list backwards compatibility issue in gene_lists_UI+functions.R
