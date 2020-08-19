@@ -16,16 +16,25 @@ for (i in 1:length(required)){
     if (source == "CRAN"){
       install.packages(package,repos='http://www.stats.bris.ac.uk/R/') #http://cran.us.r-project.org
     }else if (source == "Bioconductor"){
-      source("https://bioconductor.org/biocLite.R")
-      biocLite(package)
+    #  source("https://bioconductor.org/biocLite.R")
+    #  biocLite(package)
+      if (!requireNamespace("BiocManager", quietly = TRUE))
+        install.packages("BiocManager")
+      
+      BiocManager::install(package)
     }
   }else if(packageDescription(package)$Version==version){
     cat("WARNING: Updated package version is needed... Installing updated package version...")
     if (source == "CRAN"){
       install.packages(package,repos='http://www.stats.bris.ac.uk/R/') #http://cran.us.r-project.org
     }else if (source == "Bioconductor"){
-      source("https://bioconductor.org/biocLite.R")
-      biocLite(package)
+      #  source("https://bioconductor.org/biocLite.R")
+      #  biocLite(package)
+      if (!requireNamespace("BiocManager", quietly = TRUE))
+        install.packages("BiocManager")
+      
+      BiocManager::install(package)
     }
   }
 }
+
