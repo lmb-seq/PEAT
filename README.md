@@ -41,7 +41,7 @@ Install the above required software.<br><br>
 In R type:<br>
 shiny::runApp('folder_name')<br>
 and press enter. PEAT will launch in your web browser.<br>
-e.g. shiny::runApp('diffexp_app_v2.25') <br><br>
+e.g. shiny::runApp('diffexp_app_v2.26') <br><br>
 
 
 <H3>MANUAL</H3>
